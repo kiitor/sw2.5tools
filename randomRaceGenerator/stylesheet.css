@@ -1,17 +1,38 @@
 body{
   text-align: center;
+  margin: 0;
 }
+
 .header{
+  width: 100%;
+  padding: 5%;
   background-color: #7272e1;
   color: #ffffff;
+  box-sizing: border-box;
+}
+
+h1{
+  margin: 0;
+}
+
+.title{
+  font-size: 4em;
+}
+
+.subtitle{
+  font-size: 1em;
+}
+
+.body{
+  margin: 5% 0%;
 }
 
 .genbtn {
-    
     background-color: #8282ff;
     color: #ffffff;
     border: 1px solid #8282ff;
     border-radius: 1em;
+    margin: 5%;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 2em;
