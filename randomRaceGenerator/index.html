@@ -5,16 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ランダム種族決定</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <script src="script.js"></script>
 </head>
 <body>
     <div class="header">
+        <!--<a href="../index.html">ホーム</a>!-->
         <h1 class="title">ランダム種族決定</h1>
         <p class="subtitle">るるぶⅠ～Ⅲ掲載の種族からランダムで一つ決定します。</p>
+        <p class="rights">当WEBサイトはグループSNE・株式会社ＫＡＤＯＫＡＷＡが権利を有する「ソード・ワールド2.5 ファンキット」の素材を使用しています。
+            (C)GroupSNE
+            (C)KADOKAWA
+            イラスト：黒井ススム<br>
+            
+        </p>
+        <p>
+        ソード・ワールド2.5サポートサイト富士見書房公式 TRPG ONLINEは 	<a href="https://fujimi-trpg-online.jp/">こちら</a>
+        </p> 
     </div>
     <div class="body">
         <button id="choose" class="chobtn" type="button">ランダム決定</button>
-        <h1>結果：<span id="result">まだ実行されていません</span></h1>
+        <div>
+            <p class="result" id="result"></p>
+            <div class="image">
+                <img src="" alt="" id="charaImage" class="charaImage">
+                <p class="credit" id="credit"></p>
+            </div>
+            <p class="" id="discription"></p>
+        </div>
     </div>
 </body>
 </html>
