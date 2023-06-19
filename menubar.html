@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* サイドバーのスタイル */
+    .sidebar {
+      height: 100%;
+      width: 200px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: -200px; /* 初期状態では非表示にする */
+      background-color: #333;
+      overflow-x: hidden;
+      padding-top: 20px;
+      transition: 0.5s; /* アニメーション効果を追加 */
+    }
+    
+    /* メニューアイテムのスタイル */
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: white;
+      display: block;
+    }
+    
+    /* アクティブなメニューアイテムのスタイル */
+    .sidebar a.active {
+      background-color: #4CAF50;
+    }
+    
+    /* サイドバーを表示するクラス */
+    .sidebar.active {
+      left: 0;
+    }
+  </style>
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("active");
+    }
+  </script>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <a class="active" href="#home">ホーム</a>
+    <a href="#about">会社概要</a>
+    <a href="#services">サービス</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+  
+  <button onclick="toggleSidebar()" style="margin-left: 200px;">Toggle Sidebar</button>
+  
+  <!-- ここにコンテンツを追加する -->
+  
+</body>
+</html>

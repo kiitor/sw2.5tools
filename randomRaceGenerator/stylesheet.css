@@ -8,12 +8,68 @@ body{
   margin: 0;
 }
 
+ /* サイドバーのスタイル */
+ .sidebar {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: -200px; /* 初期状態では非表示にする */
+  background-color: #333;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: 0.5s; /* アニメーション効果を追加 */
+}
+
+/* メニューアイテムのスタイル */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+/* アクティブなメニューアイテムのスタイル */
+.sidebar a.active {
+  background-color: #4CAF50;
+}
+
+/* サイドバーを表示するクラス */
+.sidebar.active {
+  right: 0;
+}
+
+.topwrapper{
+  height: 7.5%;
+  position: fixed;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #ffffffed;
+  color: #000000;
+  box-sizing: border-box;
+  float: left;
+  vertical-align:middle;
+  box-shadow: 0 1px 3px #0000004d;
+}
+
+.displaySidebar{
+  float: right;
+}
+
 .header{
   width: 100%;
-  padding: 5%;
+  padding: 15% 5% 5% 5%;
   background-color: #7272e1;
   color: #ffffff;
   box-sizing: border-box;
+}
+
+.home{
+  display: flex;
+  float: left;
 }
 
 h1{
@@ -71,8 +127,10 @@ h1{
 }
 
 .discription{
+  text-align: left;
   background-color: #b5b5b5;
   border: dotted;
   margin: 5%;
+  padding: 2%;
 }
   

@@ -12,6 +12,18 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <div class="sidebar" id="sidebar">
+        <a href="../index.html">ホーム</a>
+        <a class="active" href="./index.html">ランダム種族決定</a>
+        <a href="#services">ダイスを振る（未実装）</a>
+    </div>
+    <div class="topwrapper">
+        <a href="../index.html" class="home">
+            <img src="./image/logos/logos_svg/logo.svg" alt="ホーム" class="homelogo">
+        </a>
+        <button type="button" onclick="toggleSidebar()" class="displaySidebar" id="displayBtn">menu</button>
+    </div>
+    <div>
     <div class="header">
         <!--<a href="../index.html">ホーム</a>!-->
         <h1 class="title">ランダム種族決定</h1>
@@ -36,6 +48,7 @@
             </div>
             <p class="" id="discription"></p>
         </div>
+    </div>
     </div>
 </body>
 </html>

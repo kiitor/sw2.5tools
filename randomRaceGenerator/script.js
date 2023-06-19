@@ -67,3 +67,9 @@ function choose() {
     discriEle.innerHTML = discription[randomNumber] + "<br><a href='https://fujimi-trpg-online.jp/'>富士見書房公式 TRPG ONLINE</a> <a href='https://fujimi-trpg-online.jp/game/sw25-character.html#prettyPhoto'>ソード・ワールド2.5 種族紹介ページ</a>より"
 }
 
+function toggleSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const displaybtn = document.getElementById("displayBtn");
+  sidebar.classList.toggle("active");
+  displaybtn.classList.toggle("active");
+}
